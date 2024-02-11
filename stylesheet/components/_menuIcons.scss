@@ -1,0 +1,41 @@
+.icons__btn {
+  all: unset;
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: " ";
+  display: inline-block;
+  vertical-align: text-bottom;
+
+  &__user {
+    @extend .icons__btn;
+    background-image: url("../img/user.svg");
+  }
+  &__search {
+    @extend .icons__btn;
+    background-image: url("../img/search.svg");
+  }
+  &__basket {
+    @extend .icons__btn;
+    position: relative;
+    background-image: url("../img/basket.svg");
+  }
+}
+
+.basket__items {
+  display: none;
+  // @include d-flex;
+  align-items: center;
+  position: absolute;
+  bottom: -6px;
+  right: 0;
+  height: 13px;
+  width: 13px;
+  border-radius: 6px;
+  background-color: red($color: #000000);
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+}

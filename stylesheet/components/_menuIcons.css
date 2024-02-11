@@ -1,0 +1,36 @@
+.icons__btn, .icons__btn__basket, .icons__btn__search, .icons__btn__user {
+  all: unset;
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: " ";
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+.icons__btn__user {
+  background-image: url("../img/user.svg");
+}
+.icons__btn__search {
+  background-image: url("../img/search.svg");
+}
+.icons__btn__basket {
+  position: relative;
+  background-image: url("../img/basket.svg");
+}
+
+.basket__items {
+  display: none;
+  align-items: center;
+  position: absolute;
+  bottom: -6px;
+  right: 0;
+  height: 13px;
+  width: 13px;
+  border-radius: 6px;
+  background-color: 0;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+}/*# sourceMappingURL=_menuIcons.css.map */

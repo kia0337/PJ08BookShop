@@ -1,0 +1,19 @@
+@mixin container {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+  
+  .container {
+    @include container;
+  }
+  
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    background-color: $background;
+  }
+  
+  main {
+    padding-top: 120px;
+  }
